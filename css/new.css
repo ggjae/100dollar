@@ -284,6 +284,7 @@ textarea:focus {
 textarea::placeholder {
   font-size: 14px;
 }
+/*
 button {
   display: inline-block;
   position: relative;
@@ -372,3 +373,4 @@ button:hover span::after {
 .btn:hover span::after {
   transition-delay: 0.2s;
 }
+*/
