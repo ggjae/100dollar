@@ -1,3 +1,7 @@
+body{
+  overflow-y: scroll;
+}
+
 #pub-text {
   margin : 0px auto;
   font-size : 50px;
@@ -7,7 +11,7 @@
 
 #contents {
   width : 800px;
-  margin : 7% auto;
+  margin : 5% auto;
 }
 
 #contents > h1{
@@ -36,6 +40,35 @@
   margin-bottom : 10px;
 }
 
+#input-form {
+  margin-bottom : 30px;
+  border : 5px solid #eee;
+  border-radius : 50px;
+  width : 787px;
+  height : 45px;
+}
+
+#input-form > img {
+  float : left;
+  width : 25px;
+  position : relative;
+  left : 15px;
+  top : 10px;
+}
+
+#input-form > input {
+  border : none;
+  position : relative;
+  left : 25px;
+  top : 2px;
+  margin : 0px;
+  height : 40px;
+  width : 720px;
+  font-size : 22px;
+  background-color : none;
+  outline : none;
+}
+
 .accordion {
   font-size : 18px;
   background-color: #eee;
@@ -47,7 +80,7 @@
   border: none;
   outline: none;
   transition: 0.4s;
-  border-radius : 0px 40px 40px 0px;
+  border-radius : 40px 40px 40px 40px;
 }
 
 .active, .accordion:hover {
@@ -111,4 +144,16 @@
   width : 0px;
   margin : 0;
   border : none;
+}
+
+.return-top {
+  right:18%;
+  bottom:70px;
+  display : none;
+  position: fixed;
+  z-index:9999999999;
+}
+
+.return-top > img{
+    width : 40px;
 }
