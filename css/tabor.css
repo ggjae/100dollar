@@ -1,7 +1,7 @@
 .tab {
     float: left;
     border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    background-color: #white;
     width: 10%;
     height: 300px;
 }
@@ -10,9 +10,12 @@
     display: block;
     background-color: inherit;
     color: black;
-    padding: 40px 16px;
+    padding: 39.1px 16px;
     width: 100%;
-    border: none;
+    border-left: 1px solid #333;
+    border-bottom: 1px solid #333;
+    border-top: none;
+    border-right: none;
     outline: none;
     text-align: center;
     cursor: pointer;
@@ -22,29 +25,29 @@
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: #ddd;
+    background-color: #8CF0FF;
 }
 
 /* Create an active/current "tab button" class */
 .tab button.active {
-    background-color: #ccc;
+    background-color: #8CF0FF;
 }
 
 /* Style the tab content */
 .tabcontent {
-    color: #333 !important;
+    color: #322 !important;
     float: left;
     padding: 0px 12px;
     border: 1px solid #ccc;
     width: 90%;
     border-left: none;
     height: 300px;
-    text-align: left;
+    text-align: left !important;
 }
 .tab1 {
     float: right;
     border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    background-color: #8CF0FF;
     width: 10%;
     height: 300px;
 }
@@ -52,7 +55,7 @@
 .tab1 button {
     display: block;
     background-color: inherit;
-    color: black;
+    color: white;
     padding: 40px 16px;
     width: 100%;
     border: none;
@@ -75,11 +78,12 @@
 
 /* Style the tab content */
 .tabcontent2 {
+    color: #322 !important;
     float: right;
     padding: 0px 12px;
     border: 1px solid #ccc;
     width: 90%;
     border-left: none;
     height: 300px;
-    text-align: right;
+    text-align: right !important;
 }
