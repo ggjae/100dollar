@@ -4,15 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/new.css" />
-    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/pub2.css" />
+    <link rel="stylesheet" href="css/pub_animate.css" />
     <link href="css/pub.css" type="text/css" rel="stylesheet" />
     <script src="js/wow.min.js"></script>
-    <!-- <script src="js/changeBorder.js"></script> -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="js/pub2.js"></script>
+    <script src="js/pub3.js"></script>
     <script>
       new WOW().init();
     </script>
-    <title>Document</title>
+    <title>Publication</title>
   </head>
 
   <body>
@@ -22,10 +24,10 @@
           <a href="new.html"><img src="img/logo.png" id="logo"/></a>
         </h1>
         <ul id="navi-center">
-          <li><a href="">ABOUT</a></li>
-          <li><a href="members.html">MEMBERS</a></li>
-          <li><a href="publication.html">PUBLICATION</a></li>
-          <li><a href="">COURSE</a></li>
+         <li><a href="aboutme2-2.html"></a></li>
+         <li><a href="members.html">MEMBERS</a></li>
+         <li><a href="publication.html">PUBLICATION</a></li>
+         <li><a href="courses.html">COURSE</a></li>
         </ul>
       </div>
     </div>
@@ -34,21 +36,12 @@
     </div>
     <div>
       <div id="contents" class="wow fadeInUp" data-wow-delay="0.3s">
-        <div id="filter">
-          <h2>Years :</h2>
-          <select id="years" onchange="filter();">
-            <option selected = "selected">ALL</option>
-            <option>2019</option>
-            <option>2018</option>
-            <option>2017</option>
-            <option>2016</option>
-            <option>2015</option>
-            <option>2014</option>
-            <option>2013</option>
-          </select>
+        <div id="input-form" class="wow fadeInUp" data-wow-delay="0.7s">
+          <image src="img/search.png">
+          <input type="text" id="keyword" />
         </div>
         <button class="accordion">International Conference</button>
-        <div class="panel">
+        <div class="panel panel_opened">
           <span class = "list">
             <p>Zhiqiang Wu, Xin Chen and Scott Uk-Jin Lee <br>"Identifying Latent Android Malware from Application's Description using LSTM" <br> In Proc. International Conference on Information, System and Convergence Applications, 2019, pp.40-42.</p>
             <a href="https://selab.hanyang.ac.kr/publications/papers/International_Conference/[IP]_Zhiqiang1.pdf"><image src = "img/pdf.png" alr="PDF download"></a>
@@ -283,6 +276,7 @@
             <a href="https://selab.hanyang.ac.kr/publications/papers/International_Conference/[IP]_Zhiqiang1.pdf"><image src = "img/pdf.png" alr="PDF download"></a>
           </span>
         </div>
+        <a class="return-top" href="#"><image src="img/top.png"></a>
       </div>
     </div>
     <script src="js/pub.js"></script>
