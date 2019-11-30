@@ -18,20 +18,9 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
 div {
   display: block;
 }
-
 
 /* header */
 
@@ -44,6 +33,21 @@ div {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#header a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+#header a:hover {
+  text-decoration: none;
+}
+
+#header ul,
+#header li {
+  list-style-type: none;
 }
 
 #header #navi h1 {
@@ -284,8 +288,8 @@ textarea:focus {
 textarea::placeholder {
   font-size: 14px;
 }
-/*
-button {
+
+#contact-content button {
   display: inline-block;
   position: relative;
   background: none;
@@ -296,11 +300,11 @@ button {
   margin: 20px 30px;
 }
 
-button:focus {
+#contact-content button:focus {
   outline: none;
 }
 
-span {
+#contact-content span {
   display: block;
   padding: 25px 80px;
 }
@@ -314,8 +318,8 @@ button::after {
   background: black;
 }
 
-span::before,
-span::after {
+#contact-content span::before,
+#contact-content span::after {
   content: "";
   width: 2px;
   height: 0;
@@ -324,13 +328,13 @@ span::after {
   background: black;
 }
 
-button:hover::before,
-button:hover::after {
+#contact-content button:hover::before,
+#contact-content button:hover::after {
   width: 100%;
 }
 
-button:hover span::before,
-button:hover span::after {
+#contact-content button:hover span::before,
+#contact-content button:hover span::after {
   height: 100%;
 }
 
