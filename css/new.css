@@ -288,6 +288,7 @@ textarea:focus {
 textarea::placeholder {
   font-size: 14px;
 }
+
 #contact-content button {
   display: inline-block;
   position: relative;
@@ -376,3 +377,4 @@ button::after {
 .btn:hover span::after {
   transition-delay: 0.2s;
 }
+*/
