@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .vertical-tab {
   color: #333;
   display: block;
@@ -126,7 +125,7 @@ position: relative;
 width: 80%;
 }
 
-.vertical-tab2 input[name="sections"] {
+.vertical-tab2 input[name="sections2"] {
 position: absolute;
 visibility: hidden;
 }
@@ -169,13 +168,13 @@ width: 220px;
 z-index:1;
 }
 
-.vertical-tab2 input[name="sections"]:checked + label { 
+.vertical-tab2 input[name="sections2"]:checked + label { 
 background: #fff;
 border-right:2px solid #3AC8FF;
 color: #bbb;
 }
 
-.vertical-tab2 input[name="sections"]:checked ~ article {
+.vertical-tab2 input[name="sections2"]:checked ~ article {
 display: block;
 }
 
@@ -234,242 +233,3 @@ h1 {
 .vertical-tab2 {
     width: 70%;
 }
-}
-=======
-.vertical-tab {
-  color: #333;
-  display: block;
-  font-family: arial, sans-serif;
-  margin: auto;
-  position: relative;
-  width: 80%;
-}
-
-.vertical-tab input[name="sections"] {
-  position: absolute;
-  visibility: hidden;
-}
-
-.vertical-tab section {
-  display: block;
-}
-
-.vertical-tab section label {
-  background: #fff;
-  border-right:1px solid #60EBFE;
-  cursor: pointer;
-  display: block;
-  font-size: 1.2em;
-  font-weight: 150;
-  padding: 15px 20px;
-  position: relative;
-  width: 180px;
-  z-index:100;
-}
-
-.vertical-tab section article {
-  display: none;
-  left: 230px;
-  min-width: 300px;
-  padding: 0 0 0 21px;
-  position: absolute;  
-  top: 0;
-}
-
-.vertical-tab section article:after {
-  background-color: #fff;
-  bottom: 0;
-  content: "";
-  display: block;
-  left:-229px;
-  position: absolute;
-  top: 0;
-  width: 220px;
-  z-index:1;
-}
-
-.vertical-tab input[name="sections"]:checked + label { 
-  background: #fff;
-  border-right:2px solid #3AC8FF;
-  color: #bbb;
-}
-
-.vertical-tab input[name="sections"]:checked ~ article {
-  display: block;
-}
-
-
-@media (max-width: 533px) {
-
-  h1 {
-    width: 100%;
-  }
-
-  .vertical-tab {
-    width: 100%;
-  }
-
-  .vertical-tab section label {
-    font-size: 1em;
-    width: 160px;
-  }  
-
- .vertical-tab section article {
-    left: 200px;
-    min-width: 270px;
-  } 
-
-  .vertical-tab section article:after {
-    background-color: #ccc;
-    bottom: 0;
-    content: "";
-    display: block;
-    left:-199px;
-    position: absolute;
-    top: 0;
-    width: 200px;
-
-  }  
-
-}
-
-
-@media (max-width: 768px) {
-  h1 {
-    width: 96%;
-  }
-
-  .vertical-tab {
-    width: 96%;
-  }
-}
-
-
-@media (min-width: 1366px) {
-  h1 {
-    width: 70%;
-  }
-
-  .vertical-tab {
-    width: 70%;
-  }
-}
-.vertical-tab2 {
-color: #333;
-display: block;
-font-family: arial, sans-serif;
-margin: auto;
-position: relative;
-width: 80%;
-}
-
-.vertical-tab2 input[name="sections"] {
-position: absolute;
-visibility: hidden;
-}
-
-.vertical-tab2 section {
-display: block;
-}
-
-.vertical-tab2 section label {
-background: #fff;
-border-right:1px solid #60EBFE;
-cursor: pointer;
-display: block;
-font-size: 1.2em;
-font-weight: 150;
-padding: 15px 20px;
-position: relative;
-width: 180px;
-z-index:100;
-}
-
-.vertical-tab2 section article {
-display: none;
-left: 230px;
-min-width: 300px;
-padding: 0 0 0 21px;
-position: absolute;  
-top: 0;
-}
-
-.vertical-tab2 section article:after {
-background-color: #fff;
-bottom: 0;
-content: "";
-display: block;
-left:-229px;
-position: absolute;
-top: 0;
-width: 220px;
-z-index:1;
-}
-
-.vertical-tab2 input[name="sections"]:checked + label { 
-background: #fff;
-border-right:2px solid #3AC8FF;
-color: #bbb;
-}
-
-.vertical-tab2 input[name="sections"]:checked ~ article {
-display: block;
-}
-
-
-@media (max-width: 533px) {
-
-h1 {
-    width: 100%;
-}
-
-.vertical-tab2 {
-    width: 100%;
-}
-
-.vertical-tab2 section label {
-    font-size: 1em;
-    width: 160px;
-}  
-
-.vertical-tab2 section article {
-    left: 200px;
-    min-width: 270px;
-} 
-
-.vertical-tab2 section article:after {
-    background-color: #ccc;
-    bottom: 0;
-    content: "";
-    display: block;
-    left:-199px;
-    position: absolute;
-    top: 0;
-    width: 200px;
-
-}  
-
-}
-
-
-@media (max-width: 768px) {
-h1 {
-    width: 96%;
-}
-
-.vertical-tab2 {
-    width: 96%;
-}
-}
-
-
-@media (min-width: 1366px) {
-h1 {
-    width: 70%;
-}
-
-.vertical-tab2 {
-    width: 70%;
-}
-}
->>>>>>> b362c22fc27b8acd3b2cf632998adcfebbb7a4c4
