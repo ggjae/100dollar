@@ -3,8 +3,14 @@
 box-sizing: border-box;
 
 }
+
+.top > h2 {
+  font-size : 50px;
+  font-weight : 700;
+}
+
 body {
-    
+
     font: 300 100% 'Helvetica Neue', Helvetica, Arial;
     margin: 5px;
     padding: 30px 0;
@@ -12,7 +18,7 @@ body {
     background: #FFFFFF !important;
 }
 .left-box {
-    padding-top: 10px;
+    padding-top: 0px;
 }
 article {
     font-family: 'Helvetica Neue';
@@ -28,7 +34,7 @@ ul.a {
     list-style-position: inside;
     list-style-type: square;
 
-    
+
 }
 ul.a2 {
     line-height: 193%;
@@ -37,7 +43,7 @@ ul.a2 {
     list-style-position: inside;
     list-style-type: square;
 
-    
+
 }
 .inline {
     display: inline;
@@ -80,7 +86,7 @@ transition: .3s ease-in-out;
 }
 
 .mid-top {
-  color:black;  
+  color:black;
 }
 .skyblue {
     color: skyblue;
@@ -199,10 +205,10 @@ ul {
  .marginto {
     padding-top: 20px !important;
     color: #333;
-    
+
     width: 100% !important;
  }
- 
+
  .head1 {
     width: 100%;
     text-align: center;
@@ -212,7 +218,7 @@ ul {
     letter-spacing: 1px;
     padding-top: 30px;
  }
- 
+
  .head2 {
     width: 100%;
     text-align: center;
@@ -222,11 +228,11 @@ ul {
     letter-spacing: 1px;
     padding-top: 60px;
  }
- 
+
  h1 span {
     font-weight: 150;
  }
- 
+
  .container2 {
     width: 80%;
     padding: 50px 0;
@@ -234,7 +240,7 @@ ul {
     position: relative;
     overflow: hidden;
  }
- 
+
  .container2:before {
     content: '';
     position: absolute;
@@ -246,7 +252,7 @@ ul {
     background: #CCD1D9;
     z-index: 1
  }
- 
+
  .timeline-block {
     width: -webkit-calc(50% + 8px);
     width: -moz-calc(50% + 8px);
@@ -261,16 +267,16 @@ ul {
     justify-content: space-between;
     clear: both;
  }
- 
+
  .timeline-block-right {
     float: right;
  }
- 
+
  .timeline-block-left {
     float: left;
     direction: rtl
  }
- 
+
  .marker {
     width: 16px;
     height: 16px;
@@ -280,33 +286,33 @@ ul {
     margin-top: 10px;
     z-index: 100;
  }
- 
+
  .timeline-content {
     width: 95%;
     padding: 0 15px;
     color: #666;
  }
- 
+
  .timeline-content h3 {
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 25px;
     font-weight: 500
  }
- 
+
  .timeline-content span {
     font-size: 15px;
     color: #a4a4a4;
  }
- 
+
  .timeline-content p {
     font-size: 14px;
     line-height: 1.5em;
     word-spacing: 1px;
     color: #888;
  }
- 
- 
+
+
  @media screen and (max-width: 768px) {
     .container:before {
        left: 8px;
@@ -319,7 +325,7 @@ ul {
     .timeline-block-right {
        float: none;
     }
- 
+
     .timeline-block-left {
        float: none;
        direction: ltr;
@@ -332,7 +338,7 @@ box-sizing: border-box;
 
 }
 body {
-    
+
     font: 300 100% 'Helvetica Neue', Helvetica, Arial;
     margin: 5px;
     padding: 30px 0;
@@ -340,7 +346,7 @@ body {
     background: #FFFFFF !important;
 }
 .left-box {
-    padding-top: 10px;
+    padding-top: 0px;
 }
 article {
     font-family: 'Helvetica Neue';
@@ -356,7 +362,7 @@ ul.a {
     list-style-position: inside;
     list-style-type: square;
 
-    
+
 }
 ul.a2 {
     line-height: 193%;
@@ -365,7 +371,7 @@ ul.a2 {
     list-style-position: inside;
     list-style-type: square;
 
-    
+
 }
 .inline {
     display: inline;
@@ -384,7 +390,7 @@ text-decoration: none;
 color: #333;
 }
 h2 {
-    color: #333;
+    color: #040000;
 }
 .two:hover ~ #red {
 margin-left: 25%;
@@ -398,6 +404,10 @@ margin-left: 50%;
 margin-left: 75%;
 }
 
+.sub-menu {
+  margin-top : 50px;
+}
+
 #red {
 height: .25rem;
 width: 25%;
@@ -408,7 +418,7 @@ transition: .3s ease-in-out;
 }
 
 .mid-top {
-  color:black;  
+  color:black;
 }
 .skyblue {
     color: skyblue;
@@ -446,8 +456,9 @@ ul {
 }
 .top {
     font-size: 22px;
-    padding-top: 130px;
+    padding-top: 200px;
     padding-bottom: 50px;
+    letter-spacing: 6px;
 }
 .mcgallery {
     height: 500px !important;
@@ -527,10 +538,10 @@ ul {
  .marginto {
     padding-top: 20px !important;
     color: #333;
-    
+
     width: 100% !important;
  }
- 
+
  .head1 {
     width: 100%;
     text-align: center;
@@ -540,7 +551,7 @@ ul {
     letter-spacing: 1px;
     padding-top: 30px;
  }
- 
+
  .head2 {
     width: 100%;
     text-align: center;
@@ -550,11 +561,11 @@ ul {
     letter-spacing: 1px;
     padding-top: 60px;
  }
- 
+
  h1 span {
     font-weight: 150;
  }
- 
+
  .container2 {
     width: 80%;
     padding: 50px 0;
@@ -562,7 +573,7 @@ ul {
     position: relative;
     overflow: hidden;
  }
- 
+
  .container2:before {
     content: '';
     position: absolute;
@@ -574,7 +585,7 @@ ul {
     background: #CCD1D9;
     z-index: 1
  }
- 
+
  .timeline-block {
     width: -webkit-calc(50% + 8px);
     width: -moz-calc(50% + 8px);
@@ -589,16 +600,16 @@ ul {
     justify-content: space-between;
     clear: both;
  }
- 
+
  .timeline-block-right {
     float: right;
  }
- 
+
  .timeline-block-left {
     float: left;
     direction: rtl
  }
- 
+
  .marker {
     width: 16px;
     height: 16px;
@@ -608,33 +619,33 @@ ul {
     margin-top: 10px;
     z-index: 100;
  }
- 
+
  .timeline-content {
     width: 95%;
     padding: 0 15px;
     color: #666;
  }
- 
+
  .timeline-content h3 {
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 25px;
     font-weight: 500
  }
- 
+
  .timeline-content span {
     font-size: 15px;
     color: #a4a4a4;
  }
- 
+
  .timeline-content p {
     font-size: 14px;
     line-height: 1.5em;
     word-spacing: 1px;
     color: #888;
  }
- 
- 
+
+
  @media screen and (max-width: 768px) {
     .container:before {
        left: 8px;
@@ -647,7 +658,7 @@ ul {
     .timeline-block-right {
        float: none;
     }
- 
+
     .timeline-block-left {
        float: none;
        direction: ltr;

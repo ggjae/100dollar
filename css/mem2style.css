@@ -5,6 +5,9 @@
 /* #membermain {
     color: black;
 } */
+#membermain h1 {
+  margin-top : 44px;
+}
 
 h2.team-h2 {
     top: -16px;
@@ -26,7 +29,7 @@ h2.team-h2 {
     max-width: 1000px;
     margin: auto;
     padding-bottom: 5em;
-    margin-top: 3em;
+    margin-top: 10px;
 }
 
 .team-member {
@@ -160,7 +163,7 @@ h2.team-h2 {
     padding: 0 0;
     font-weight: 700;
     letter-spacing: 6px;
-    font-size: 30px;
+    font-size: 25px;
     line-height: initial;
     position: relative;
     display: flex;
