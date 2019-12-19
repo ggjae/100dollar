@@ -7,11 +7,6 @@ const changeContent = function(event){
 	document.querySelector(target).classList.add("selected");
 	document.querySelector(target).classList.remove("deselected");
 };
-jQuery(document).ready(function($){
-    setTimeout(function(){
-        $('.trans--grow').addClass('grow');
-    }, 275);
-});
 
 const make_PBLObjective = function(){
 	const pbl_objective = document.querySelector("#pbl_objective");
