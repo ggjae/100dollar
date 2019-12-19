@@ -1,52 +1,51 @@
-const handleMouseMove = function(event){
-	const screen_height = window.screen.height;
-	if( event.pageY < 0.05*screen_height){
-		this.classList.remove("hidden");
-	}
-	else if(event.pageY > 0.3*screen_height){
-		setTimeout(()=>{
-			this.classList.add("hidden");
-		})
-	}
+const coursebox = document.querySelectorAll(".coursebox");
+const coursebox_content = document.querySelectorAll(".coursebox_content");
+const coursebox_btn = document.querySelectorAll(".coursebox_btn");
+const trig_under = document.querySelector("#trig_under");
+const trig_post = document.querySelector("#trig_post");	
+
+const post_load = false;
+
+
+
+const coursebox_mouseover = function(index){
+	this.classList.add("selected");
+	coursebox_content[index].classList.add("hidden");
+
 };
 
-const toggle_dropdowncontent = function(event){
-	this.classList.toggle("a11y-hidden");
-}
-;
+const coursebox_mouseout = function(index){
+	this.classList.remove("selected");
+	coursebox_content[index].classList.remove("hidden");
+
+};
 
 
 
-const change_btn_content = function(event){
-	const btn = document.querySelectorAll(".dropdown-btn")
-	btn[1].innerHTML = this.innerHTML;
-	btn[0].innerHTML = this.innerHTML;
-}
+const triger_postgraduate = function(e){
+		this.classList.add("selected");
+		trig_under.classList.remove("selected");
 
-const handle_mouseOut = function(event){
-	if(!(this.classList.contains("a11y-hidden"))){
+		document.querySelector(".content.selected").classList.remove("selected");
 		setTimeout(()=>{
-			this.classList.add("a11y-hidden");
-		},1000);
-	}
-}
+			document.querySelector("#Postgraduate").classList.add("selected")},500);
+};
+const triger_undergraduate = function(e){
+		this.classList.add("selected");
+		trig_post.classList.remove("selected");
+		document.querySelector(".content.selected").classList.remove("selected");
+
+		setTimeout(()=>{
+			document.querySelector("#Undergraduate").classList.add("selected")},500);
+};
 
 
-window.addEventListener('scroll',handleScroll.bind(header));
-window.addEventListener('scroll',handleScroll_nav.bind(navbar));
-window.addEventListener('mousemove',handleMouseMove.bind(navbar));
+coursebox.forEach((element,index)=>{
+	element.addEventListener("mouseover",coursebox_mouseover.bind(element,index))
+});
+coursebox.forEach((element,index)=>{
+	element.addEventListener("mouseout",coursebox_mouseout.bind(element,index))
+});
 
-dropdown_btn.addEventListener('click',toggle_dropdowncontent.bind(dropdown_content));
-dropdown_btn2.addEventListener('click',toggle_dropdowncontent.bind(dropdown_content));
-
-dropdown_list.forEach((element) =>{
-	element.addEventListener('click',change_btn_content.bind(element));
-});	
-
-dropdown_content.addEventListener('mouseleave',handle_mouseOut.bind(dropdown_content));
-
-
-setTimeout(()=>{
-	navbar.classList.add("hidden");
-},1000);
-
+trig_under.addEventListener('click',triger_undergraduate.bind(trig_under));
+trig_post.addEventListener('click',triger_postgraduate.bind(trig_post));
