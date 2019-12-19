@@ -2,15 +2,7 @@ body {
 	margin : 0;
 	padding: 0;
 	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-/*		background:  linear-gradient(180deg,rgba(200, 200, 200,1),rgba(200,200,200,0) 50%),
-				linear-gradient(90deg, rgba(255, 255, 255,1),rgba(242, 230, 184,0) 32.1%);
-*/
-/*	background:  linear-gradient(120deg,rgba(108, 154, 197,1),rgba(108, 154, 197,0) 70%),
-			linear-gradient(231deg, rgba(217, 142, 165	,1),rgba(217, 142, 165,0) 70%);
-*/
-	background:  linear-gradient(120deg,rgba(41, 129, 192,1),rgba(108, 154, 197,0) 70%),
-			linear-gradient(231deg, rgba(117, 116, 188	,1),rgba(117, 116, 188,0) 70%),	
-			url("/images/background.svg") left top  no-repeat;
+
 /*background-blend-mode: screen;*/
 
 	/*	text-shadow: 0 0 3px rgba(232, 194, 191, 0.3);
@@ -65,7 +57,7 @@ a {
 	justify-content: space-between;
 	border-radius: 0 0 5vh 5vh;
 	width: 80vw;
-	color: white;
+	color: skyblue;
 	text-shadow: 0 1vh 1vw rgba(0,0,0,0.2);
 	z-index: 3;
 }
@@ -145,7 +137,7 @@ a {
 #section1 {
 	padding-left: 0;
 	height: 80vh;
-	color: white;
+	color: black;
 	text-shadow: 0 1vh 1vw rgba(0,0,0,0.2);
 	z-index: 2;
 }
@@ -180,7 +172,7 @@ a.class-btn {
 	/*border : 1px solid white	;*/
 	/*background: linear-gradient(160deg,rgb(239, 108, 112),rgb(250, 216, 49));*/
 	/*background: linear-gradient(160deg,rgba(255, 255, 255, 0.5 ),rgba(255,255,255,0));*/
-	color: white;
+	color: orange;
 }
 
 a.class-btn::before {
@@ -205,7 +197,7 @@ a.class-btn:hover::before{
 
 #section2 {
 	position: relative;
-	/*transform : translateY(-5%);*/
+	transform : translateY(-15%);
 	width: 100vw;
 	color:black;
 	filter: drop-shadow(0,0,5vw,rgba(0,0,0,0.3));
@@ -219,7 +211,6 @@ a.class-btn:hover::before{
 	flex-direction: column;
 	justify-content: flex-start;
 	background-color: white;
-	height: 170vh;
 	clip-path: url(#section2_clip);
 }
 

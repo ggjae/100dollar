@@ -75,7 +75,6 @@ const fold_pbl_group = function(){
 }
 
 make_Timeline();
-focusOn();
 make_PBLObjective();
 make_PBLGroup();
 

@@ -20,7 +20,14 @@
 	width: 80vw;
 	opacity: 1;
 }
-
+.lh {
+	list-style-type: none;
+}
+.lh2 {
+	line-height: 3;
+	font-weight: 100px;
+	text-align: center;
+}
 .frame.deselected{
 	min-height: 0;
 	height: 1px;
@@ -53,20 +60,28 @@
 #content1 > div{
 	display: flex;
 	padding-top: 5vh;
-	box-sizing: border-box;
-	width: calc(75vw/2);
-	min-height: 80vh;
 }
 
 #Timeline {
 	position: relative;
+	justify-content: space-between;
+	height: 1160px;
+	padding : 0 2.5vw 5vw;
+	overflow: scroll;
+}
+#Timelinehead {
+	padding-left: 30px;
+	position: relative;
+	width: 105px;
+	height: 27px;
+	justify-content: space-between;
+	z-index: 100;
+	
+}
+.flex {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	
-	padding : 0 2.5vw 5vw;
 }
-
 .time_slot{
 	display: flex;
 	flex-direction: row;
